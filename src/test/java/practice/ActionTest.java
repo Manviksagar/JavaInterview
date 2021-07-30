@@ -20,6 +20,7 @@ public class ActionTest {
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https:www.google.com");
+
 		Actions a = new Actions(driver);
 		a.moveToElement(driver.findElement(By.name("q"))).click().keyDown(Keys.SHIFT).sendKeys("sagar", Keys.ENTER).build().perform();
 		
